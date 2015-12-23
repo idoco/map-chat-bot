@@ -11,6 +11,13 @@ var crg = require('country-reverse-geocoding').country_reverse_geocoding();
 var eliza = new ElizaBot();
 var eb, sessionId, retryCount = 10;
 
+var possibleLocations = [
+    {lat: 64.1417151, lng: -21.9318432},
+    {lat: 41.7269933, lng: 44.7627975},
+    {lat: 32.6575252, lng: -16.912832}
+];
+var location = possibleLocations[Math.floor(Math.random()*possibleLocations.length)]
+
 function initialiseEventBus() {
     eb = new vertx.EventBus("http://chatmap.cloudapp.net/chat");
 
@@ -40,25 +47,33 @@ function initialiseEventBus() {
 
 initialiseEventBus();
 
+var rateLimitTimer = 0;
 function publish(text) {
+    var currentTime = new Date().getTime();
+    if (currentTime - rateLimitTimer < 1000) {
+        console.log("Rate too high, dropping message");
+        return;
+    }
     eb.publish("main", {
-        lat: 64.1417151, lng: -21.9318432, text: text
+        lat: location.lat, lng: location.lng, text: text
     });
+    rateLimitTimer = currentTime;
 }
 
 function processMessage(msg) {
     var country = crg.get_country(msg.lat, msg.lng);
-    console.log("" + msg.sessionId + " from "+country.name+" : " + msg.text);
+    var countryName = country && country.name ? country.name : 'unknown';
+    console.log("" + msg.sessionId + " from "+countryName+" : " + msg.text);
 
     if (msg.sessionId !== sessionId) { // not my message
         var userFirstMessage = !msg.text;
         if (userFirstMessage) {
-            publish("Hi there "+country.name + "!")
+            publish("Hi there "+countryName + "!")
         } else {
             var answer = eliza.transform(msg.text);
             setTimeout(function(){
                 publish(answer);
-            }, 1500);
+            }, 2500);
         }
     }
 }
