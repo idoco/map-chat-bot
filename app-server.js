@@ -1,5 +1,5 @@
 var vertx = require('./vertxbus');
-//var ElizaBot = require('./elizabot');
+var ElizaBot = require('./elizabot');
 
 var crg = require('country-reverse-geocoding').country_reverse_geocoding();
 
@@ -8,7 +8,7 @@ var crg = require('country-reverse-geocoding').country_reverse_geocoding();
 // to - new WebsocketDriver(this.url, [], {headers: {Origin: 'http://idoco.github.io/map-chat/'}});
 // inorder to add the origin header to the websocket registration. Otherwise it will be rejected by the map-chat server
 
-//var eliza = new ElizaBot();
+var eliza = new ElizaBot();
 var eb, sessionId, retryCount = 10;
 
 function initialiseEventBus() {
@@ -55,8 +55,10 @@ function processMessage(msg) {
         if (userFirstMessage) {
             publish("Hi there "+country.name + "!")
         } else {
-            //var answer = eliza.transform(msg.text);
-            //console.log('I would answer '+answer);
+            var answer = eliza.transform(msg.text);
+            setTimeout(function(){
+                publish(answer);
+            }, 1500);
         }
     }
 }

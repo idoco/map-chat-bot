@@ -2,12 +2,15 @@
 // entries prestructured as layed out in Weizenbaum's description
 // [cf: Communications of the ACM, Vol. 9, #1 (January 1966): p 36-45.]
 
+var xData = {};
+
 var elizaInitials = [
 	"How do you do.  Please tell me your problem.",
 // additions (not original)
 	"Please tell me what's been bothering you.",
 	"Is something troubling you ?"
 ];
+xData.elizaInitials = elizaInitials;
 
 var elizaFinals = [
 	"Goodbye.  It was nice talking to you.",
@@ -17,6 +20,7 @@ var elizaFinals = [
 	"This was a good session, wasn't it -- but time is over now.   Goodbye.",
 	"Maybe we could discuss this moreover in our next session ?   Goodbye."
 ];
+xData.elizaFinals = elizaFinals;
 
 var elizaQuits = [
 	"bye",
@@ -25,6 +29,7 @@ var elizaQuits = [
 	"exit",
 	"quit"
 ];
+xData.elizaQuits = elizaQuits;
 
 var elizaPres = [
 	"dont", "don't",
@@ -46,6 +51,7 @@ var elizaPres = [
 	"identical", "alike",
 	"equivalent", "alike"
 ];
+xData.elizaPres = elizaPres;
 
 var elizaPosts = [
 	"am", "are",
@@ -58,6 +64,7 @@ var elizaPosts = [
 	"my", "your",
 	"i'm", "you are"
 ];
+xData.elizaPosts = elizaPosts;
 
 var elizaSynons = {
 	"be": ["am", "is", "are", "was"],
@@ -69,6 +76,7 @@ var elizaSynons = {
 	"happy": ["elated", "glad", "better"],
 	"sad": ["unhappy", "depressed", "sick"]
 };
+xData.elizaSynons = elizaSynons;
 
 var elizaKeywords = [
 
@@ -595,6 +603,8 @@ var elizaKeywords = [
 	]]
 
 ];
+xData.elizaKeywords = elizaKeywords;
+
 
 // regexp/replacement pairs to be performed as final cleanings
 // here: cleanings for multiple bots talking to each other
@@ -607,6 +617,7 @@ var elizaPostTransforms = [
 	/\bI to have (\w+)/, "I have $1",
 	/Earlier you said your( own)? (\w+)( now)?\./, "Earlier you talked about your $2."
 ];
+xData.elizaPostTransforms = elizaPostTransforms;
 
 // eof
 
@@ -683,7 +694,7 @@ ElizaBot.prototype._dataParsed = false;
 
 ElizaBot.prototype._init = function() {
 	// install ref to global object
-	var global=ElizaBot.prototype.global=self;
+	var global=ElizaBot.prototype.global=xData;
 	// parse data and convert it from canonical form to internal use
 	// prodoce synonym list
 	var synPatterns={};
