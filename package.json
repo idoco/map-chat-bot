@@ -1,0 +1,16 @@
+{
+  "name": "map-chat-bot",
+  "version": "1.0.0",
+  "description": "MapChatBot",
+  "main": "app-server.js",
+  "dependencies": {
+    "sockjs-client": "1.0.3",
+    "country-reverse-geocoding" : "0.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app-server.js"
+  },
+  "author": "Ido",
+  "license": "MIT"
+}
