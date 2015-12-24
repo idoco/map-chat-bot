@@ -1,7 +1,6 @@
 var vertx = require('./vertxbus');
-var ElizaBot = require('./elizabot');
-
 var crg = require('country-reverse-geocoding').country_reverse_geocoding();
+var ElizaBot = require('./elizabot');
 
 // Hack!
 // I've changed node_modules/sockjs-client/lib/transport/websocket.js:32
