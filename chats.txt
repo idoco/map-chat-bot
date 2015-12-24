@@ -1,0 +1,98 @@
+
+myBot : Hi there United States of America!
+United States of America : are you in the ocean
+myBot : What if I were in the ocean ?
+United States of America : are you a fish
+United States of America : ?
+myBot : Does that question interest you ?
+United States of America : yes
+myBot : You seem to be quite positive.
+United States of America : hmmm
+myBot : Please go on.
+
+===
+
+Poland : WHAT UP
+myBot : Have you asked such questions before ?
+Poland : no
+myBot : Why not ?
+Poland : where you at?
+myBot : You're not really talking about me -- are you ?
+Poland : funchal?
+myBot : Do you feel strongly about discussing such things ?
+Poland : 
+Poland : lol
+myBot : Does talking about this bother you ?
+
+===
+
+Poland : Siedzę i myślę :D
+myBot : Your ślę :d ?
+Poland : Co ślę? 
+myBot : Lets discuss further why your ślę :d.
+Poland : In Poland 
+myBot : Tell me more about that.
+Poland : I dont have any ideas 
+myBot : Does that trouble you ?
+Poland : What do you wont to know 
+myBot : What are your feelings now ?
+Poland : Tired and sleepy
+myBot : That is interesting. Please continue.
+Poland : Sorry but i dont have time, im
+myBot : Apologies are not necessary.
+Poland : I only check this web site 
+myBot : You say you only check this web site ?
+Poland : I watched movie and there a guy described the page
+myBot : Can you elaborate on that ?
+Poland : Not now, next time 
+myBot : What does that suggest to you ?
+Poland : Goodbay ;D
+myBot : Tell me more about that.
+
+===
+
+myBot : Hi there United States of America!
+Poland : 
+United States of America : Hi
+myBot : Do you feel strongly about discussing such things ?
+United States of America : What do you mean? 
+myBot : We were discussing you -- not me.
+United States of America : What the hell is going on, Poland? 
+myBot : Why do you ask ?
+United States of America : Do you like fishsticks? 
+myBot : You're not really talking about me -- are you ?
+United States of America : Bot
+myBot : I'm not sure I understand you fully.
+United States of America : Bye
+myBot : This was a good session, wasn't it -- but time is over now.   Goodbye.
+
+===
+
+myBot : Hi there Russia!
+Russia : hello
+myBot : Hi. What seems to be your problem ?
+Russia : are you a bot?
+myBot : Would it matter to you ?
+Russia : yes
+myBot : I see.
+Russia : bots
+myBot : Do you feel strongly about discussing such things ?
+
+===
+
+Poland : siemanko / hi!
+myBot : Tell me more about that.
+Poland : what ?
+myBot : What answer would please you most ?
+Poland : Hi <3
+myBot : What does that suggest to you ?
+Poland : temperature in your town ? :D
+myBot : Are you worried about someone else's town ?
+Poland : dafuq ?
+myBot : Do you feel strongly about discussing such things ?
+Poland : aha
+myBot : Please go on.
+Poland : why
+myBot : What is it you really want to know ?
+
+
