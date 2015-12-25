@@ -1,3 +1,150 @@
+myBot : Hi there United Kingdom!
+United Kingdom : Привет 
+myBot : Did you come here from reddit ?
+United Kingdom : Hey
+myBot : Tell me more about that.
+United Kingdom : Nah, Russian reddit 
+myBot : Did you come here from reddit ?
+United Kingdom : It's called pikabu
+myBot : Please go on.
+United Kingdom : Anyway, the website is dead, I sometimes go here to check it out 
+myBot : Can you elaborate on that ?
+United Kingdom : No
+myBot : You are being a bit negative.
+United Kingdom : Cause tired af
+myBot : I'm not sure I understand you fully.
+United Kingdom : Fucking hell, you live on a tiny island 
+myBot : What are your feelings now ?
+United Kingdom : I am jet lagged 
+myBot : Do you know anyone else who is jet lagged ?
+United Kingdom : You? 
+myBot : You're not really talking about me -- are you ?
+United Kingdom : Привет еба
+myBot : Do you feel strongly about discussing such things ?
+United Kingdom : I am surprised, there are so many people
+myBot : Is it because you are surprised that you came to me ?
+United Kingdom : You are such a fast typer 
+myBot : What makes you think I am such a fast typer ?
+United Kingdom : FUCK ME 
+myBot : That is interesting. Please continue.
+United Kingdom : HOW CAN YOU TYPE SO FUCKING FAST
+myBot : What are your feelings now ?
+United Kingdom : Like you are reading my mind 
+myBot : Is it important to you that you have your mind ?
+United Kingdom : Are you psychologist? 
+myBot : Why are you interested in whether I am psychologist or not ?
+United Kingdom : Or just high? 
+myBot : Earlier you talked about your mind.
+United Kingdom : Did you smoke some dank kush? 
+myBot : You're not really talking about me -- are you ?
+United Kingdom : I am ffs
+myBot : Do you know anyone else who is ffs ?
+United Kingdom : I do indeed 
+myBot : You say you do indeed ?
+United Kingdom : You are breaking my brain 
+myBot : Your brain ?
+United Kingdom : Correct 
+myBot : But your brain.
+United Kingdom : Yes
+myBot : You seem to be quite positive.
+United Kingdom : Is it a program? 
+myBot : Tell me more about that.
+United Kingdom : Ok let's see 
+myBot : Do you feel strongly about discussing such things ?
+United Kingdom : Are you Spanish? 
+myBot : Would you prefer if I weren't spanish ?
+United Kingdom : Not really 
+myBot : Please go on.
+United Kingdom : Which languages do you speak? 
+myBot : What are your feelings now ?
+United Kingdom : Answer my question 
+myBot : Why do you say your question ?
+United Kingdom : Cause I wank you to answer it 
+myBot : Do you wish to wank me ?
+United Kingdom : Christmas present 
+myBot : Does that have anything to do with the fact that you have your question ?
+United Kingdom : Yes
+myBot : You are sure.
+United Kingdom : Positive 
+myBot : Did you come here from reddit ?
+United Kingdom : I came here from Russian reddit 
+myBot : Do you say you came here from russian reddit for some special reason ?
+United Kingdom : Called pikabu 
+myBot : I'm not sure I understand you fully.
+United Kingdom : Well I do understand 
+myBot : Can you elaborate on that ?
+United Kingdom : 
+myBot : Hi there United Kingdom!
+United Kingdom : Hey
+myBot : Please go on.
+United Kingdom : With what
+myBot : Why do you ask ?
+United Kingdom : Are you sure? 
+myBot : Perhaps I am sure in your fantasies.
+United Kingdom : Pls more detail 
+myBot : Tell me more about that.
+United Kingdom : Whats your name
+myBot : I've told you before, I don't care about names -- please continue.
+United Kingdom : I do care
+myBot : Do you say you do care for some special reason ?
+United Kingdom : It bothers me 
+myBot : Does talking about this bother you ?
+United Kingdom : Yes
+myBot : I see.
+United Kingdom : Do you speak French? 
+myBot : You're not really talking about me -- are you ?
+United Kingdom : I am 
+myBot : Do you believe it is normal to be ?
+United Kingdom : Do you speak French? 
+myBot : What are your feelings now ?
+United Kingdom : Сейчас посмотрим 
+myBot : Do you feel strongly about discussing such things ?
+United Kingdom : Фейк или нет 
+myBot : I'm not sure I understand you fully.
+United Kingdom : Ну так 
+myBot : Do you feel strongly about discussing such things ?
+United Kingdom : Да
+myBot : Tell me more about that.
+United Kingdom : Конечно 
+myBot : Does talking about this bother you ?
+United Kingdom : Да
+myBot : Did you come here from reddit ?
+United Kingdom : Неь
+United Kingdom : Пикабу 
+myBot : Do you feel strongly about discussing such things ?
+myBot : Does talking about this bother you ?
+United Kingdom : Ну так 
+myBot : I'm not sure I understand you fully.
+United Kingdom : Правда? 
+myBot : Does talking about this bother you ?
+United Kingdom : Да
+myBot : I'm not sure I understand you fully.
+United Kingdom : You won mate
+myBot : Oh, I won mate ?
+United Kingdom : Correct 
+myBot : Please go on.
+United Kingdom : 
+myBot : Hi there United Kingdom!
+United Kingdom : Oh my god
+myBot : Your god ?
+United Kingdom : You are for 
+myBot : Does it please you to believe I am for ?
+United Kingdom : This iekelekev 
+myBot : Lets discuss further why your god.
+United Kingdom : Histosols 
+myBot : I'm not sure I understand you fully.
+United Kingdom : Helene 
+myBot : Please go on.
+United Kingdom : Joelle
+myBot : Tell me more about that.
+United Kingdom : Meow
+myBot : I'm not sure I understand you fully.
+United Kingdom : Oreo
+myBot : That is interesting. Please continue.
+United Kingdom : Долбоеб
+myBot : I'm not sure I understand you fully.
+
+===
 
 myBot : Hi there United States of America!
 United States of America : are you in the ocean
@@ -94,5 +241,4 @@ Poland : aha
 myBot : Please go on.
 Poland : why
 myBot : What is it you really want to know ?
-
 
