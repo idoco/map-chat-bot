@@ -61,11 +61,15 @@ function publish(text) {
 }
 
 function processMessage(msg) {
-    var country = crg.get_country(msg.lat, msg.lng);
-    var countryName = country && country.name ? country.name : 'unknown';
-    console.log("" + msg.sessionId + " from "+countryName+" : " + msg.text);
+    var myMessage = msg.sessionId === sessionId;
 
-    if (msg.sessionId !== sessionId) { // not my message
+    if (!myMessage) { // not my message
+        var country = crg.get_country(msg.lat, msg.lng);
+        var countryName = country && country.name ? country.name : 'unknown';
+        if (msg.text) {
+            console.log(countryName + " : " + msg.text);
+        }
+
         var userFirstMessage = !msg.text;
         if (userFirstMessage) {
             publish("Hi there "+countryName + "!")
@@ -73,8 +77,10 @@ function processMessage(msg) {
             var answer = eliza.transform(msg.text);
             setTimeout(function(){
                 publish(answer);
-            }, 2500);
+            }, 3000);
         }
+    } else {
+        console.log("myBot : " + msg.text);
     }
 }
 
