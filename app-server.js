@@ -7,8 +7,12 @@ var ElizaBot = require('./elizabot');
 // to - new WebsocketDriver(this.url, [], {headers: {Origin: 'http://idoco.github.io/map-chat/'}});
 // inorder to add the origin header to the websocket registration. Otherwise it will be rejected by the map-chat server
 
-var eliza = new ElizaBot();
-var eb, sessionId, retryCount = 10;
+var eliza = new ElizaBot(),
+    eb,
+    sessionId,
+    retryCount = 10,
+    rateLimitTimer = 0;
+
 
 var possibleLocations = [
     {lat: 64.1417151, lng: -21.9318432},
@@ -17,36 +21,36 @@ var possibleLocations = [
 ];
 var location = possibleLocations[Math.floor(Math.random()*possibleLocations.length)]
 
-function initialiseEventBus() {
-    eb = new vertx.EventBus("http://chatmap.cloudapp.net/chat");
+init();
 
-    eb.onopen = function () {
-        eb.registerHandler("main", function (msg) {
-            if (sessionId) {
-                processMessage(msg);
-
-            } else {
-                sessionId = msg.newSessionId;
-                console.log("First message received. sessionId is [" + sessionId + "]");
-                publish("Hello world! :)");
-            }
-        });
-    };
-
-    eb.onclose = function () {
-        if (retryCount) {
-            retryCount--;
-            console.log('Connection lost, scheduling reconnect');
-            setTimeout(initialiseEventBus, 1000);
-        } else{
-            console.log('Connection lost, please restart :( ');
+function onopen () {
+    this.registerHandler("main", function (msg) {
+        if (sessionId) {
+            processMessage(msg);
+        } else {
+            sessionId = msg.newSessionId;
+            console.log("First message received. sessionId is [" + sessionId + "]");
+            publish("Hello world! :)");
         }
-    };
+    });
 }
 
-initialiseEventBus();
+function onclose () {
+    if (retryCount) {
+        retryCount--;
+        console.log('Connection lost, scheduling reconnect');
+        setTimeout(init, 1000);
+    } else{
+        console.log('Connection lost, please restart :( ');
+    }
+}
 
-var rateLimitTimer = 0;
+function init () {
+    eb = new vertx.EventBus("http://chatmap.cloudapp.net/chat");
+    eb.onopen = onopen;
+    eb.onclose = onclose;
+}
+
 function publish(text) {
     var currentTime = new Date().getTime();
     if (currentTime - rateLimitTimer < 1000) {
