@@ -1,3 +1,17 @@
+myBot : Hi there Poland!
+Poland : hello
+myBot : How do you do. Whats up ?
+Poland : im good
+myBot : Tell me more about that.
+Poland : i eat kebab
+myBot : Do you say you eat kebab for some special reason ?
+Poland : no
+myBot : Why 'no' ?
+Poland : i dont know 
+myBot : Do you wish to be able to know ?
+
+===
+
 myBot : Hi there United Kingdom!
 United Kingdom : Привет 
 myBot : Did you come here from reddit ?
