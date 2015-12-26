@@ -43,6 +43,7 @@ var elizaData = {
         "computers", "computer",
         "bot", "computer",
         "bots", "computer",
+        "spanish", "espanol",
         "were", "was",
         "you're", "you are",
         "i'm", "i am",
@@ -226,6 +227,12 @@ var elizaData = {
                 "I told you before, I don't understand Spanish."
             ]]
         ]],
+        ["russian", 0, [
+            ["*", [
+                "goto xforeign",
+                "I told you before, I don't understand Russian."
+            ]]
+        ]],
         ["xforeign", 0, [
             ["*", [
                 "I speak only English."
@@ -233,8 +240,14 @@ var elizaData = {
         ]],
         ["hello", 0, [
             ["*", [
-                "How do you do.  Please state your problem.",
-                "Hi.  What seems to be your problem ?"
+                "How do you do. Whats up ?",
+                "Hi.  How is everything ?"
+            ]]
+        ]],
+        ["hi", 0, [
+            ["*", [
+                "Hi, Whats up ?",
+                "Hi, How is everything ?"
             ]]
         ]],
         ["computer", 50, [

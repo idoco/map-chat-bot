@@ -27,7 +27,7 @@ function init() {
 function onopen () {
     var eventBus = this,
         sessionId,
-        rateLimitTimer = 0;
+        lastMessageTime = 0;
 
     eventBus.registerHandler("main", function (msg) {
         if (sessionId) {
@@ -41,14 +41,14 @@ function onopen () {
 
     function publish(text) {
         var currentTime = new Date().getTime();
-        if (currentTime - rateLimitTimer < 1000) {
+        if (currentTime - lastMessageTime < 1000) {
             console.log("Rate too high, dropping message");
             return;
         }
         eventBus.publish("main", {
             lat: location.lat, lng: location.lng, text: text
         });
-        rateLimitTimer = currentTime;
+        lastMessageTime = currentTime;
     }
 
     function handleMessage(msg) {
