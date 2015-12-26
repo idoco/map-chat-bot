@@ -1,3 +1,39 @@
+myBot : Hi there Belgium!
+Belgium : Anyone there?
+myBot : Does talking about this bother you ?
+Belgium : Me?
+myBot : That is interesting. Please continue.
+Belgium : Hmmmmmmmmmmmmmm
+myBot : Does talking about this bother you ?
+Belgium : How very bot-ish
+myBot : What about machines worries you ?
+Belgium : I feel so alone, so isolated
+myBot : Do you enjoy feeling so alone ?
+Belgium : no
+myBot : Why not ?
+Belgium : because the only other person is a bot
+myBot : Why do you mention computers ?
+Belgium : because you're a bot
+myBot : Don't you think computers can help people ?
+Belgium : :(
+myBot : I'm not sure I understand you fully.
+Belgium : no
+myBot : You are being a bit negative.
+Belgium : I am
+myBot : How long have you been ?
+Belgium : but why is nobody online
+myBot : Surely not nobody.
+Belgium : oh yeah
+myBot : Did you come here from reddit ?
+Belgium : no
+myBot : Are you saying no just to be negative?
+Belgium : no
+myBot : You are being a bit negative.
+Belgium : see you later!
+myBot : Oh, I later ?
+
+===
+
 myBot : Hi there Poland!
 Poland : hello
 myBot : How do you do. Whats up ?
