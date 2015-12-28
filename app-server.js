@@ -2,12 +2,6 @@ var vertx = require('./vertxbus');
 var crg = require('country-reverse-geocoding').country_reverse_geocoding();
 var ElizaBot = require('./elizabot');
 
-// Hack!
-// I've changed node_modules/sockjs-client/lib/transport/websocket.js:32
-// to - new WebsocketDriver(this.url, [], {headers: {Origin: 'http://idoco.github.io/map-chat/'}});
-// inorder to add the origin header to the websocket registration. Otherwise it will be rejected by the map-chat server
-
-
 var possibleLocations = [
     {lat: 64.1417151, lng: -21.9318432},
     {lat: 41.7269933, lng: 44.7627975},
