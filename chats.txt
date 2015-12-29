@@ -1,3 +1,28 @@
+Poland : Hi :D
+myBot : Hi, Whats up ?
+Poland : cool :S
+myBot : Does talking about this bother you ?
+Poland : I speak english a little bit :S
+myBot : You say you speak english a little bit :s ?
+Poland : yea?
+myBot : What does that suggest to you ?
+Poland : My english is bad ._.
+myBot : Your english is bad ?
+Poland : yes ;_;
+myBot : I see.
+Poland : thanks man XD
+myBot : Earlier you said your english is bad.
+Poland : cause it is
+myBot : Do you feel strongly about discussing such things ?
+Poland : You're a bot ?
+myBot : What do you think machines have to do with your problem ?
+Poland : yea u re a bot ;-;
+myBot : What do you think about machines ?
+Poland : Machines are good xD
+myBot : Why do you mention computers ?
+
+===
+
 myBot : Hi there Belgium!
 Belgium : Anyone there?
 myBot : Does talking about this bother you ?
