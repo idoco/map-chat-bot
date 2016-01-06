@@ -7,6 +7,9 @@ var possibleLocations = [
     {lat: 41.7269933, lng: 44.7627975},
     {lat: 32.6575252, lng: -16.912832}
 ];
+
+var randomAnswers = ["Bazinga!", "Did you see this? http://www.theuselessweb.com/"];
+
 var location = possibleLocations[Math.floor(Math.random()*possibleLocations.length)];
 var eliza = new ElizaBot();
 init();
@@ -20,8 +23,8 @@ function init() {
 
 function onopen () {
     var eventBus = this,
-        sessionId,
-        lastMessageTime = 0;
+        timeout = null,
+        sessionId;
 
     eventBus.registerHandler("main", function (msg) {
         if (sessionId) {
@@ -34,15 +37,17 @@ function onopen () {
     });
 
     function publish(text) {
-        var currentTime = new Date().getTime();
-        if (currentTime - lastMessageTime < 1000) {
-            console.log("Rate too high, dropping message");
-            return;
+        text = text.length > 255 ? text.slice(0,255) : text;
+
+        if (timeout){
+            clearTimeout(timeout);
         }
-        eventBus.publish("main", {
-            lat: location.lat, lng: location.lng, text: text
-        });
-        lastMessageTime = currentTime;
+
+        timeout = setTimeout(function(){
+            eventBus.publish("main", {
+                lat: location.lat, lng: location.lng, text: text
+            });
+        }, text.length * 200);
     }
 
     function handleMessage(msg) {
@@ -60,9 +65,10 @@ function onopen () {
                 publish("Hi there "+countryName + "!")
             } else {
                 var answer = eliza.transform(msg.text);
-                setTimeout(function(){
-                    publish(answer);
-                }, 3000);
+                if (Math.random() >0.99){
+                    answer = randomAnswers[Math.floor(Math.random()*randomAnswers.length)];
+                }
+                publish(answer);
             }
         } else {
             console.log("myBot : " + msg.text);

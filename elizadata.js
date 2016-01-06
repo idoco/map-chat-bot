@@ -241,12 +241,12 @@ var elizaData = {
         ["hello", 0, [
             ["*", [
                 "How do you do. Whats up ?",
-                "Hi.  How is everything ?"
+                "Whats up ?"
             ]]
         ]],
         ["hi", 0, [
             ["*", [
-                "Hi, Whats up ?",
+                "Whats up ?",
                 "Hi, How is everything ?"
             ]]
         ]],
@@ -586,7 +586,7 @@ var elizaData = {
         ["alike", 10, [
             ["*", [
                 "In what way ?",
-                "What resemblence do you see ?",
+                "What resemblance do you see ?",
                 "What does that similarity suggest to you ?",
                 "What other connections do you see ?",
                 "What do you suppose that resemblence means ?",
