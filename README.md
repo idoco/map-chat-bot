@@ -4,3 +4,5 @@ It was built ontop [elizabot.js](http://www.masswerk.at/elizabot/) and uses [cou
 to greet new chatters acording to their location.
 
 [Interesting Conversations](chats.txt)
+
+![](http://imgs.xkcd.com/comics/twitter_bot.png)
